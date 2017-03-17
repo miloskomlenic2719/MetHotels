@@ -1,0 +1,203 @@
+@tamno-crvena: #912311;
+@hover-boja: #e2371b;
+@header-background: #a38985;
+@main-background: #dbcfce;
+@bela-boja: #FFFFFF;
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  width: 70%;
+  font-family: sans-serif;
+}
+
+#all{
+  background: @main-background;
+}
+
+#header{
+  background: @header-background;
+  min-height: 15px;
+  padding-left: 85px;
+}
+
+h3 {
+    padding-top: 70px;
+    padding-right: 300px;
+    color: white;
+    font-size: 350%;
+    float: right;
+}
+
+button{
+  padding-top: 5px;
+  margin: 0;
+  margin-top: 15px;
+  float: right;
+}
+
+#nav{
+  background: @tamno-crvena;
+  min-height: 60px;
+  padding: 0 5%;
+  display: block;
+  overflow: hidden;
+}
+
+#main{
+  min-height: 444px;
+  padding: 0 5%;
+}
+
+#welcome{
+  width: 70%;
+  float: left;
+  padding: 0 5% 5% 0;
+}
+
+#sidebarwidget{
+  width: 25%;
+  float: left;
+
+}
+
+h2{
+  text-align: center;
+}
+
+#footer{
+  clear: both;
+  background: @tamno-crvena;
+  min-height: 22px;
+  padding: 5px 5%;
+  color: @bela-boja;
+  text-align: center;
+}
+
+#header{
+  h1{
+    color: @bela-boja;
+    margin: 0;
+    padding: 0 500px;
+  }
+
+}
+
+#nav{
+  ul{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    li{
+      list-style-type: none;
+      display: inline-block;
+      float: left;
+      height: 60px;
+      text-align: center;
+        a{
+          color: @bela-boja;
+          text-decoration: none;
+          font-weight: bold;
+          line-height: 40px;
+          display: block;
+          padding: 10px 33px;
+
+        }
+
+        a:hover, a.active{
+          background: @hover-boja;
+
+        }
+    }
+  }
+}
+
+p{
+  line-height: 25px;
+  text-align: justify;
+
+}
+
+.grid1, .grid2{
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  line-height: 25px;
+}
+
+.grid3{
+  float: left;
+  width: 30%;
+  margin: 0;
+  line-height: 25px;
+}
+
+img{
+  max-width: 100%;
+}
+
+div.menu{
+  clear: both;
+  cursor: pointer;
+  padding: 22px;
+  background: @main-background;
+  color: @bela-boja;
+  display: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+
+
+
+  #nav{
+
+    padding: 0;
+    ul{
+      display: none;
+
+      li{
+        width: 100%;
+
+      }
+    }
+
+  }
+
+  div.menu{
+    display: block;
+
+  }
+
+  #welcome{
+    width: 100%;
+    float: none;
+  }
+
+  #sidebarwidget{
+    clear: both;
+    width: 100%;
+    float: none;
+  }
+
+  div.grid1{
+    width: 47%;
+    margin-right: 6%;
+  }
+  div.grid2{
+    width: 47%;
+    margin-right: 0;
+  }
+  div.grid3{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+    div.grid1, div.grid2, div.grid3{
+      width: 100%;
+      margin: 0;
+    }
+
+}
